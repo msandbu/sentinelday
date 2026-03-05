@@ -1,0 +1,45 @@
+{
+	"servers": {
+		"MCP-Sentineldatalake": {
+			"url": "https://sentinel.microsoft.com/mcp/data-exploration",
+			"type": "http"
+		},
+		"mcp-threatintel": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"mcp-threatintel-server"
+			],
+			"env": {
+				"OTX_API_KEY": "your-otx-api-key",
+				"ABUSEIPDB_API_KEY": "your-abuseipdb-api-key",
+				"GREYNOISE_API_KEY": "your-greynoise-api-key",
+				"ABUSECH_AUTH_KEY": "your-abusech-auth-key"
+			}
+		},
+		"Microsoft MCP Server for Enterprise": {
+			"type": "http",
+			"url": "https://mcp.svc.cloud.microsoft/enterprise"
+		},
+		"microsoftdocs/mcp": {
+			"type": "http",
+			"url": "https://learn.microsoft.com/api/mcp",
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		},
+		"Sentinel-Triage": {
+			"url": "https://sentinel.microsoft.com/mcp/triage",
+			"type": "http"
+		},
+		"Sentineltoolbox": {
+			"url": "https://logicapp/api/mcpservers/logicapp/mcp",
+			"type": "http"
+		},
+		"servicenow": {
+			"url": "",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
