@@ -51,3 +51,16 @@ SecurityAlert
 | summarize Alerts = count() by ProviderName
 | order by Alerts desc
 ```
+
+---
+
+## 🔗 Mer kontekst og inspirasjon
+
+### Linker til MCP-servere og inspirasjon
+- https://github.com/markolauren/ResponseMCP
+- https://github.com/stefanpems/ai-powered-soc
+- https://github.com/SCStelz/security-investigator
+- https://github.com/MHaggis/Security-Detections-MCP
+
+### LLM Benchmarks
+- https://artificialanalysis.ai
