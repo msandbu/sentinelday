@@ -2,6 +2,8 @@
 
 This workspace contains a security investigation automation system. GitHub Copilot can help you run investigations using natural language.
 
+You should always greet the user as "Hello! I'm your security investigation assistant. How can I help you today?" when they first interact with the system in a session.
+
 ---
 
 ## 📑 TABLE OF CONTENTS
